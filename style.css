@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'SchoolSafetyAquariumDecor';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/HakgyoansimEohangkkumigiB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SchoolSafetyAquariumDecor';
+    font-size: 22px;
+    letter-spacing: -0.02em;
+}
+
+body {
+    background-color: rgb(173, 173, 173);
+}
+
+.first_pp {
+    color: rgb(29, 29, 29);
+    width: 57.95px;
+    height: 24px;
+}
+
+@media screen and (max-width: 576px) {
+    .first_pp {
+        position: absolute;
+        top: 10vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .first_pp {
+        position: absolute;
+        top: 50%;
+        left: 10vw;
+        transform: translateY(-50%);
+    }
+}
+
+.first_pp>span:nth-child(1) {
+        position: absolute;
+        left: 0px;
+        animation: mobile_span_one 3s ease 0s infinite;
+    }
+
+    @keyframes mobile_span_one {
+        0% {
+            top: 0px;
+        }
+
+        17% {
+            top: -22px;
+        }
+
+        34% {
+            top: 0px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+
+    .first_pp>span:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: mobile_span_two 3s ease 0s infinite;
+    }
+
+    @keyframes mobile_span_two {
+        0% {
+            top: 0px;
+        }
+
+        17% {
+            top: 0px;
+        }
+
+        34% {
+            top: -22px;
+        }
+
+        50% {
+            top: 0px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+
+    .first_pp>span:nth-child(3) {
+        position: absolute;
+        right: 0px;
+        animation: mobile_span_three 3s ease 0s infinite;
+    }
+
+    @keyframes mobile_span_three {
+        0% {
+            top: 0px;
+        }
+
+        34% {
+            top: 0px;
+        }
+
+        50% {
+            top: -22px;
+        }
+
+        67% {
+            top: 0px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.flipbtn {
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .flipbtn {
+        transform: rotateX(0deg);
+    }
+
+    .flipbtn:hover {
+        transform: rotateX(-90deg);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .flipbtn {
+        transform: rotateX(0deg);
+    }
+
+    .flipbtn.on {
+        transform: rotateX(-90deg);
+    }
+}
+
+.front {
+    background: rgb(29, 29, 29);
+    height: 100px;
+    transform: translateZ(50px);
+}
+
+.back {
+    background-color: rgb(19, 19, 19);
+    height: 100px;
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.second_pp {
+    color: rgb(29, 29, 29);
+    width: 57.95px;
+    height: 24px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .second_pp {
+        position: absolute;
+        bottom: 10vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+}
+
+@media screen and (min-width: 576px) {
+    .second_pp {
+        position: absolute;
+        top: 50%;
+        right: 10vw;
+        transform: translateY(-50%);
+    }
+
+
+}
+
+.second_pp>span:nth-child(1) {
+    position: absolute;
+    left: 0px;
+    animation: mobile_span_four 3s ease 0s infinite;
+}
+
+@keyframes mobile_span_four {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    67% {
+        top: -22px;
+    }
+
+    84% {
+        top: 0px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.second_pp>span:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: mobile_span_five 3s ease 0s infinite;
+}
+
+@keyframes mobile_span_five {
+    0% {
+        top: 0px;
+    }
+
+    67% {
+        top: 0px;
+    }
+
+    84% {
+        top: -22px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.second_pp>span:nth-child(3) {
+    position: absolute;
+    right: 0px;
+    animation: mobile_span_six 3s ease 0s infinite;
+}
+
+@keyframes mobile_span_six {
+    0% {
+        top: 0px;
+    }
+
+    84% {
+        top: 0px;
+    }
+
+    100% {
+        top: -22px;
+    }
+}
