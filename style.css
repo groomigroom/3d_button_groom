@@ -45,15 +45,15 @@ body {
 
 @keyframes groomi_rotate {
     0% {
-        transform: rotate(0deg) translateX(-50%);
+        transform: translateX(-50%) rotate(0deg);
     }
 
     50% {
-        transform: rotate(-60deg) translateX(-50%);
+        transform: translateX(-50%) rotate(-60deg);
     }
 
     100% {
-        transform: rotate(0deg) translateX(-50%);
+        transform: translateX(-50%) rotate(0deg);
     }
 }
     .first_pp {
