@@ -41,7 +41,7 @@ body {
 @media screen and (max-width: 576px) {
     .groomi_one_img {
     position: absolute;
-    top: 35vw;
+    top: 35vh;
     left: 50%;
     width: 20vw;
     height: auto;
@@ -50,7 +50,7 @@ body {
 
     .groomi_two_img {
     position: absolute;
-    bottom: 35vw;
+    bottom: 35vh;
     left: 50%;
     width: 20vw;
     height: auto;
