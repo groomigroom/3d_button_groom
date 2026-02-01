@@ -39,6 +39,24 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+    .groomi_one_img {
+    position: absolute;
+    top: 35vw;
+    left: 50%;
+    width: 20vw;
+    height: auto;
+    animation: groomi_rotate 2s ease 0s infinite;
+    }
+
+    .groomi_two_img {
+    position: absolute;
+    bottom: 35vw;
+    left: 50%;
+    width: 20vw;
+    height: auto;
+    animation: groomi_rotate 2s ease 0s infinite;
+    }
+    
     .first_pp {
         position: absolute;
         top: 10vh;
