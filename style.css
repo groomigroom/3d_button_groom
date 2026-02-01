@@ -5,6 +5,20 @@
     font-style: normal;
 }
 
+@keyframes groomi_rotate {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(-60deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,21 +55,18 @@ body {
     width: 100px;
     height: auto;
     animation: groomi_rotate 2s ease 0s infinite;
-}
-
-@keyframes groomi_rotate {
-    0% {
-        transform: translateX(-50%) rotate(0deg);
     }
 
-    50% {
-        transform: translateX(-50%) rotate(-60deg);
+    .groomi_two_img {
+    position: absolute;
+    bottom: 10vw;
+    left: 50%;
+    width: 100px;
+    height: auto;
+    animation: groomi_rotate 2s ease 0s infinite;
     }
 
-    100% {
-        transform: translateX(-50%) rotate(0deg);
-    }
-}
+
     .first_pp {
         position: absolute;
         top: 50%;
